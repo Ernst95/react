@@ -1,9 +1,12 @@
 import React from 'react';
 import './index.css';
+import { Link } from 'react-router-dom';
 
 const CountriesListItem = ({ countries }) => (
     <li> 
-        {countries.name}
+        <Link to = {`/country/${countries.name}`}> 
+            {countries.name}
+        </Link>
     </li>
 )
 
