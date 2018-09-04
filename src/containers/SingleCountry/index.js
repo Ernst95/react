@@ -14,13 +14,12 @@ class SingleCountry extends Component {
 
         fetch(`https://restcountries.eu/rest/v2/name/${id}?fullText=true`)
             .then(response => response.json())
-            .then(json => this.setState({ country: json[0]}))
+            .then(json => this.setState({country: json[0]}))
     }
 
     render() {
 
         const {country} = this.state;
-        console.log(country);
         
         return (
             <div>

@@ -16,5 +16,4 @@ const SingleCountryList = (props) => {
     )
 }
 
-
 export default SingleCountryList;

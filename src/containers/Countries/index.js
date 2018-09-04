@@ -12,18 +12,12 @@ class Countries extends Component {
         error: null
     }
 
-   /* componentDidMount() {
+   /*componentDidMount() {
         const series = ["Vikings", "Game of Thrones"];
 
         setTimeout(() => {
             this.setState({series: series});
         }, 2000);
-    }*/
-
-    /*componentDidMount() {
-        fetch('https://restcountries.eu/rest/v2/region/europe')
-            .then(response => response.json())
-            .then(json => this.setState({ countries: json}))
     }*/
 
     /*onCountriesInputChange = e => {
@@ -44,13 +38,13 @@ class Countries extends Component {
                     throw new Error('Something went wrong ...');
                 }
             })
-            .then(json => this.setState({ countries: json, isFetching: false }))
-            .catch(error => this.setState({ error, countries: [], isFetching: false }));
+            .then(json => this.setState({countries: json, isFetching: false}))
+            .catch(error => this.setState({error, countries: [], isFetching: false}));
     }
 
     render() {
 
-        const { countries, countriesName, isFetching, error } = this.state;
+        const {countries, countriesName, isFetching, error} = this.state;
 
         return (
             <div>
