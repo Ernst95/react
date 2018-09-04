@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CountriesList from '../../components/CountriesList';
+import Loader from '../../components/Loader';
 
 class Countries extends Component {
 
@@ -65,7 +66,7 @@ class Countries extends Component {
                 }
                 {
                     isFetching && 
-                    <p> Loading...</p>
+                    <Loader />
                 }
                 {
                     !isFetching &&
