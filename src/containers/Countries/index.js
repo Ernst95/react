@@ -15,16 +15,30 @@ class Countries extends Component {
         }, 2000);
     }*/
 
-    componentDidMount() {
+    /*componentDidMount() {
         fetch('https://restcountries.eu/rest/v2/region/europe')
             .then(response => response.json())
             .then(json => this.setState({ countries: json}))
+    }*/
+
+    /*onCountriesInputChange = e => {
+        console.log(e);
+        console.log(e.target.value);
+    }*/
+
+    onCountriesInputChange = e => {
+        fetch(`https://restcountries.eu/rest/v2/name/${e.target.value}`)
+            .then(response => response.json())
+            .then(json => this.setState({ countries: json }))
     }
 
     render() {
         return (
             <div>
                 The length of countries array : {this.state.countries.length}
+                <div> 
+                    <input type = "text" onChange = {this.onCountriesInputChange} />
+                </div>
                 <CountriesList list = {this.state.countries}/>
             </div>
         )
