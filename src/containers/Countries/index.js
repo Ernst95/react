@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CountriesList from '../../components/CountriesList';
 import Loader from '../../components/Loader';
+import Intro from '../../components/Intro';
 
 class Countries extends Component {
 
@@ -53,6 +54,7 @@ class Countries extends Component {
 
         return (
             <div>
+                <Intro message = "Here you can find all your most loved countries"/>
                 <div> 
                     <input value = {countriesName} type = "text" onChange = {this.onCountriesInputChange} />
                 </div>
