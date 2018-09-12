@@ -22,6 +22,17 @@
   font-size: large;
 }
 
+.App-footer {
+    position: abosulte;
+    background-color: #222;
+    height: 60px;
+    padding: 20px;
+    color: white;
+    left:0;
+    bottom:0;
+    right:0;
+  }
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
