@@ -5,7 +5,7 @@ const HomepageList = (props) => {
     return (
         <div>
             <Link to = {'/countries'}>
-                <p> Countries </p> 
+                <button> Countries </button> 
             </Link>
             <Link to = {'/car'}>
                 <p>  Cars </p>

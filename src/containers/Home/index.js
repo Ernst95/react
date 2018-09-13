@@ -1,22 +1,34 @@
 import React, {Component} from 'react';
 import HomepageList from '../../components/Home';
 import Intro from '../../components/Intro';
+import Splashscreen from '../../components/Splashscreen';
 
 class Home extends Component {
     
     state = {
-        home: null
+        home: null,
+        view: <Splashscreen />
+    }
+
+    componentWillMount() {
+        setTimeout(() => {
+        if(true) {
+            this.setState({
+                view: <HomepageList />
+            })
+        }
+        }, 5000);
     }
 
     render() {
         
         const {home} = this.state;
+        const {view} = this.state;
 
         return (
             <div>
-                <Intro message = "Welcome" />
                 <div>
-                    <HomepageList />
+                    {view}
                 </div>
             </div>
         )

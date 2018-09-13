@@ -7,14 +7,14 @@ class App extends Component {
 
     render() {
         return (
-        <div className="App">
-            <header className="App-header">
-            <h1 className="App-title">Functions</h1>
-            </header>
-            <Main />
-            <footer className="App-footer">
-                
-            </footer>
+        <div className="Test">
+                <header className = "footer">HEADER</header>
+                <div className="App">
+                    <div className="main">
+                        <Main />
+                    </div>
+                </div>
+                <footer className = "footer">FOOTER</footer>
         </div>
         );
     }
