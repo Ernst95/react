@@ -1,4 +1,7 @@
 .splashscreen img {
-    min-height: 80vh;
-    min-width: 80vw
+    text-align: center;
+    height: 25%;
+    width: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }

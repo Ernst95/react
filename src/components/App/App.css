@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  min-height: 80vh
+  min-height: 100vh
 }
 
 .App-logo {
@@ -23,11 +23,9 @@
   font-size: large;
 }
 
-.footer {
-    text-align: center;
-    min-height: 10vh;
-    background-color: black;
-  }
+.splashscreen {
+    text-align: center
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

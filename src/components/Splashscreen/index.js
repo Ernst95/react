@@ -1,5 +1,5 @@
 import React from 'react';
-import splashscreenSrc from '../../assests/splashscreen.gif';
+import splashscreenSrc from '../../assests/splashscreen2.gif';
 import './index.css';
 
 const Splashscreen = (props) => (

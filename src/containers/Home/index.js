@@ -7,10 +7,10 @@ class Home extends Component {
     
     state = {
         home: null,
-        view: <Splashscreen />
+        //view: <Splashscreen />
     }
 
-    componentWillMount() {
+    /*componentWillMount() {
         setTimeout(() => {
         if(true) {
             this.setState({
@@ -18,17 +18,17 @@ class Home extends Component {
             })
         }
         }, 5000);
-    }
+    }*/
 
     render() {
         
         const {home} = this.state;
-        const {view} = this.state;
+        //const {view} = this.state;
 
         return (
             <div>
                 <div>
-                    {view}
+                    <HomepageList />
                 </div>
             </div>
         )
