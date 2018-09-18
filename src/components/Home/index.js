@@ -1,11 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 
 const HomepageList = (props) => {
     return (
         <div>
             <Link to = {'/countries'}>
-                <button> Countries </button> 
+                <Button bsStyle="success">Success</Button>
             </Link>
             <Link to = {'/car'}>
                 <p>  Cars </p>
