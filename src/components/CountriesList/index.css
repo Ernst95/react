@@ -1,13 +1,11 @@
-.countries-list img {
+.image {
     width: 250px;
     height: 250px;
 }
 
 .countries-list div {
     display: inline-block;
-    margin: 5px;
     padding: 5px;
-    border-style: outset;
-    width: 250px;
-    height: 100%;
+    margin: 5px;
+    border-style: solid;
 }

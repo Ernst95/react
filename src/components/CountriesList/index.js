@@ -1,23 +1,26 @@
 import React from 'react';
 import './index.css';
 import { Link } from 'react-router-dom';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 const CountriesListItem = ({ countries }) => (
-    <div> 
+    <Col md = {4}> 
         <Link to = {`/country/${countries.name}`}> 
             <p> {countries.name} </p>
-            <img style = {{width: 250}} alt = "Country flag" src = {countries.flag} /> 
+            <img className = "image" alt = "Country flag" src = {countries.flag} /> 
         </Link>
-    </div>
+    </Col>
 )
 
 const CountriesList = (props) => {
     return (
-        <div className = "countries-list">
+        <Grid>
+        <Row>
             {props.list.map(countries => (
                 <CountriesListItem countries = {countries} key = {countries.name}/>
             ))}
-        </div>
+        </Row>
+        </Grid>
     )
 }
 
