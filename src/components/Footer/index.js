@@ -20,8 +20,7 @@ const Footer = (props) => {
         //         <a href = "https://plus.google.com/"><img alt = "google plus" src = {googlePLus} /></a>
         //     </div>
         // </div>
-        <div>
-            <Grid className = "grid">
+            <Grid fluid className = "grid">
                 <Row>
                     <Col md = {3}>
                         <p> Company </p>
@@ -59,7 +58,6 @@ const Footer = (props) => {
                     </Col>
                 </Row>
             </Grid>
-        </div>
     )
 }
 

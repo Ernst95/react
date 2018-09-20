@@ -25,10 +25,10 @@ const Header = (props) => {
         //         </Link>           
         //     </div>
         // </div>
-        <Grid>
+        <Grid fluid>
             <Row>
                 <Col md = {12}>
-                    <Navbar staticTop>
+                    <Navbar>
                         <Navbar.Header>
                             <Navbar.Brand>
                             <Link to = {'/'}>
@@ -52,6 +52,10 @@ const Header = (props) => {
                             </NavDropdown>
                         </Nav>
                     </Navbar>
+                </Col>
+            </Row>
+            <Row>
+                <Col md = {12}>
                     <Carousel>
                         <Carousel.Item className = "carousel">
                             <img alt = "1920x250" src = {Banner1} />
