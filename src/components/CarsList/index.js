@@ -1,20 +1,25 @@
 import React from 'react';
 //import {Link} from 'react-router-dom';
 import './index.css';
+import {Grid, Row, Col, Image} from 'react-bootstrap';
 
 const CarsListItem = ({cars}) => (
-    <a href = {cars.pageURL}>
-        <img  className = "cars-list" alt = "image" src = {cars.webformatURL} /> 
-    </a>
+    <Col md = {3}>
+        <a href = {cars.pageURL}>
+            <Image  className = "cars-list" alt = "image" src = {cars.largeImageURL} thumbnail responsive /> 
+        </a>
+    </Col>
 )
 
 const CarsList = (props) => {
     return (
-        <div>
-            {props.list.hits.map(cars => (
-                <CarsListItem cars = {cars} key = {cars.id} />
-            ))}
-        </div>
+        <Grid fluid>
+            <Row>
+                {props.list.hits.map(cars => (
+                    <CarsListItem cars = {cars} key = {cars.id} />
+                ))}
+            </Row>
+        </Grid>
     )
 }
 
